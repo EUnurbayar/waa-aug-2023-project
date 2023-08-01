@@ -41,9 +41,15 @@ public class User {
 
     @OneToMany
     @JoinColumn(name = "user_id")
+    private List<Job_Experience> job_exp;
+
+    @OneToMany
+    @JoinColumn(name = "user_id")
     private List<EventsAndReunions> ev_reunions;
 
     @OneToMany
     @JoinColumn(name = "user_id")
     private List<InsightsAndSurveys> ins_surveys;
+
+
 }

@@ -12,7 +12,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @Service
 public class EventsAndReunionsServiceImpl implements EventsAndReunionsService {
-    private EventsAndReunionsRepo eventsAndReunionsRepo;
+    private final EventsAndReunionsRepo eventsAndReunionsRepo;
     private final ModelMapper modelMapper;
 
     @Override

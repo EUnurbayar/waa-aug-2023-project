@@ -13,4 +13,21 @@ public class User_details {
 
     @ManyToOne
     private User user;
+
+    // contact information
+    private String last_name;
+    private String first_name;
+    private String email;
+    private Long phone_num;
+
+    // university information
+    private String university_name;
+    private String degree;
+    private String start_date;
+    private String end_date;
+
+    // achievement information
+    private String achieve_title;
+    private String issue_date;
+    private String portfolio;
 }

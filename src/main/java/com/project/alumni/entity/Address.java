@@ -1,9 +1,6 @@
 package com.project.alumni.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
@@ -15,5 +12,10 @@ public class Address {
     private String state;
     private String city;
     private String street;
-    private int zipcode;
+    private Long zipcode;
+
+//    @OneToOne
+//    @JoinColumn(name = "jobAdd_id")
+//    private Job_Advertisement jobAdvertisement;
+
 }

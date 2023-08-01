@@ -11,8 +11,13 @@ public class Job_Advertisement {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    private String company_name;
+    private String position;
+    private String description;
+    private String benefits;
 
-    private String job_name;
+//    @OneToOne
+//    private Address address;
 
     @ManyToOne
     private User user;
